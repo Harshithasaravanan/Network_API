@@ -7,7 +7,7 @@ import paramiko
 
 def perform_tcpdump(ssh, file_tcp):
 
-    command_for_tcp = 'sudo tcpdump -c 5 -i ens33 192.168.3.21 -w capture.pcap'
+    command_for_tcp = 'sudo tcpdump -c 5 XXX.XXX.XXX.XXX -w capture.pcap' #IP of VM as instructed in Step 5
     
     stdin, stdout, stderr = ssh.exec_command(command_for_tcp)
 
@@ -55,7 +55,7 @@ def perform_traceroute(ssh,file_tr):
 
 def perform_nmap(ssh,file_nmap):
 
-    command_for_nmap = "nmap 127.0.0.53"
+    command_for_nmap = "nmap XXX.XXX.XXX.XXX" #Try to give your Localhost address to check if it works
 
     stdin, stdout, stderr = ssh.exec_command(command_for_nmap)
 
@@ -69,16 +69,16 @@ def perform_nmap(ssh,file_nmap):
     ssh.close() #close the ssh connection
 
 # Define the SSH credentials and remote server details
-ssh_host = '192.168.52.21'
-ssh_port = 22
-ssh_username = 'hs'
-ssh_password = 'cse'
+ssh_host = 'XXX.XXX.XXX.XXX' # #Another Static IP configured for your VM to make it communicate with the local PC alone
+ssh_port = 22 # default for SSH
+ssh_username = 'give_your_username_for_the_vm'
+ssh_password = 'give_the_password_for _the_vm'
 
 # Define the local file paths to save the captured data
-tcp_file = 'C:/Users/acer/captured_packets.pcap'
-ns_file = 'C:/Users/acer/output_ns.txt'
-traceroute_file = 'C:/Users/acer/output_traceroute.txt'
-port_scan_file = 'C:/Users/acer/output_nmap.txt'
+tcp_file = 'Path_in_local_pc(.pcap format)'
+ns_file = 'path_in_local_pc(.txt format)'
+traceroute_file = 'path_in_local_pc(.txt format)'
+port_scan_file = 'path_in_local_pc(.txt format)'
 
 # Create SSH client and connect to the remote server
 ssh = paramiko.SSHClient()
