@@ -17,7 +17,8 @@ PART 1 – GNS3
 
 •	Add a cisco router, a switch, a cloud to connect the router to the internet and the Linux VM you created in a new GNS3 topology as shown below
 
- 
+ ![WhatsApp Image 2024-01-02 at 18 20 45](https://github.com/Harshithasaravanan/Network_API/assets/129355754/a6c3e210-b6e4-4cee-89fe-732643bff58c)
+
 
 •	First configure the router to act as a DHCP server
 
@@ -89,6 +90,7 @@ PART 1 – GNS3
 
 •	Set a static ip for the system for the second adapter as shown below. Note the subnet of this adapter. Use the same steps as before to configure the static ip for this NIC as well
 
+![WhatsApp Image 2024-01-02 at 18 20 45-2](https://github.com/Harshithasaravanan/Network_API/assets/129355754/310d9298-49b2-40d3-9c75-afbb345ad360)
 
 
 PART 2 – VSCODE
