@@ -88,7 +88,7 @@ PART 1 – GNS3
 
 •	Add another network adapter in your VM by navigating to the virtual machine settings and clicking add -> network adapter -> finish 
 
-•	Set a static ip for the system for the second adapter as shown below. Note the subnet of this adapter. Use the same steps as before to configure the static ip for this NIC as well
+•	Set a static ip for the system for the second adapter as shown below. Note the subnet of this adapter. Use the same steps as before to configure the static ip for this NIC as well. The .yaml file shouldlook like this:
 
 ![WhatsApp Image 2024-01-02 at 18 20 45-2](https://github.com/Harshithasaravanan/Network_API/assets/129355754/310d9298-49b2-40d3-9c75-afbb345ad360)
 
