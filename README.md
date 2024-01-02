@@ -34,9 +34,9 @@ PART 1 – GNS3
 
     o	Open conf t under FastEthernet0/1
 
-    o   Type ip address 192.168.3.14 255.255.255.0(the ip you want to give)
+    o Type ip address 192.168.3.14 255.255.255.0(the ip you want to give)
 
-    o	 Type no sh
+    o	Type no sh
 
     o	Save it
 
